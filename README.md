@@ -1,4 +1,4 @@
-# deer.social
+# deer.social!
 
 This is a soft fork of [social app](https://github.com/bluesky-social/social-app).
 
