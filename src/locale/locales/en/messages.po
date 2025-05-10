@@ -3040,7 +3040,7 @@ msgstr ""
 #: src/view/shell/desktop/LeftNav.tsx:617
 #: src/view/shell/Drawer.tsx:386
 msgid "Explore"
-msgstr ""
+msgstr "Search"
 
 #: src/screens/Settings/AccountSettings.tsx:137
 #: src/screens/Settings/AccountSettings.tsx:141
