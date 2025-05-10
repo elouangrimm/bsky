@@ -20,7 +20,7 @@ module.exports = function (_config) {
   const IS_DEV = !IS_TESTFLIGHT || !IS_PRODUCTION
 
   const ASSOCIATED_DOMAINS = [
-    'applinks:deer.social',
+    'applinks:darkspace.elouan.xyz',
     // When testing local services, enter an ngrok (et al) domain here. It must use a standard HTTP/HTTPS port.
     ...(IS_DEV || IS_TESTFLIGHT ? [] : []),
   ]
@@ -37,11 +37,9 @@ module.exports = function (_config) {
   return {
     expo: {
       version: VERSION,
-      name: 'deer.social',
-      slug: 'deer',
-      scheme: ['bluesky', 'deer'],
-      // owner: 'blueskysocial',
-      // owner: 'neema.brown',
+      name: 'dark.space',
+      slug: 'darkspace',
+      scheme: ['bluesky', 'dark'],
       runtimeVersion: {
         policy: 'appVersion',
       },
@@ -64,7 +62,7 @@ module.exports = function (_config) {
             'Used to save images to your library.',
           NSPhotoLibraryUsageDescription:
             'Used for profile pictures, posts, and other kinds of content',
-          CFBundleSpokenName: 'deer.social',
+          CFBundleSpokenName: 'darkspace',
           CFBundleLocalizations: [
             'en',
             'an',
@@ -162,7 +160,7 @@ module.exports = function (_config) {
             data: [
               {
                 scheme: 'https',
-                host: 'deer.social',
+                host: 'darkspace.elouan.xyz',
               },
               {
                 scheme: 'https',
@@ -363,10 +361,10 @@ module.exports = function (_config) {
           'react-native-vision-camera',
           {
             enableLocation: false,
-            cameraPermissionText: 'deer.social needs access to your camera.',
+            cameraPermissionText: 'darkspace needs access to your camera.',
             enableMicrophonePermission: true,
             microphonePermissionText:
-              'deer.social needs access to your microphone.',
+              'darkspace needs access to your microphone.',
           },
         ],
       ].filter(Boolean),
